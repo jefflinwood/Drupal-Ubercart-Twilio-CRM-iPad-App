@@ -1,0 +1,5 @@
+; $Id$
+name = Twilio iPad CRM 
+description = Twilio iPad CRM Module to handle integration between Twilio and an iPad Customer support app
+package = iPad CRM
+core = 6.x

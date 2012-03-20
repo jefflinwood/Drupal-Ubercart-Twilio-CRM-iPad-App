@@ -1,0 +1,108 @@
+<?php
+
+include 'Services/Twilio/Capability.php';
+
+/**
+* @file
+* Custom API functions for Twilio iPad CRM
+*/
+
+  function twilioipadcrm_menu() {
+    $items['twilioipadcrm/test'] = array(
+      'page callback' => 'twilioipadcrm_test',
+      'access callback' => TRUE,
+      );
+    $items['twilioipadcrm/auth'] = array(
+      'page callback' => 'twilioipadcrm_auth',
+      'access callback' => TRUE,
+      );
+    $items['twilioipadcrm/orderdata'] = array(
+      'page callback' => 'twilioipadcrm_orderdata',
+      'access callback' => TRUE,
+      );
+    $items['twilioipadcrm/orderproductdata'] = array(
+      'page callback' => 'twilioipadcrm_orderproductdata',
+      'access callback' => TRUE,
+      );
+    return $items;
+  }
+
+  function twilioipadcrm_test() {
+    drupal_set_header('Content-Type: text/xml');
+    
+    echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+    echo "<Response><Dial><Client>jeff</Client></Dial></Response>";
+  }
+
+  function twilioipadcrm_auth() {
+    // put your Twilio API credentials here
+    $accountSid = 'XXXXXXX';
+    $authToken  = 'XXXXXX';
+
+    // put your Twilio Application Sid here
+    $appSid     = 'XXXXXX';
+     
+    $capability = new Services_Twilio_Capability($accountSid, $authToken);
+    $capability->allowClientOutgoing($appSid, array(), $clientName);
+    $capability->allowClientIncoming('jeff');
+    $token = $capability->generateToken();
+ 
+    echo $token;
+  }
+
+  function twilioipadcrm_orderdata() {
+
+    drupal_set_header('Content-Type: application/json');
+    $input = array_merge( $_GET, $_POST );
+
+    //validate input for required fields
+    if (!isset($input['phone']) 
+      ) {
+        $result['result'] = false;
+        $result['error'] = 'Missing required fields';
+        echo drupal_to_js($result);
+        return;
+    }
+    $phone = $input['phone'];
+
+    $query = "SELECT * FROM uc_orders WHERE delivery_phone = '%s' ORDER BY created DESC LIMIT 1 ";
+    $order = db_fetch_object(db_query($query, $phone));   
+    //while ($orders[] = db_fetch_object(db_query($query, $phone))); 
+ 
+    if (!$order) {
+      //node not found because node id does not exist, for instance
+        $result['result'] = false;
+        $result['error'] = 'Phone Number does not exist';
+        echo drupal_to_js($result);
+        return;
+    }
+
+    echo drupal_to_js($order);
+  }
+
+  function twilioipadcrm_orderproductdata() {
+
+    drupal_set_header('Content-Type: application/json');
+    $input = array_merge( $_GET, $_POST );
+
+    //validate input for required fields
+    if (!isset($input['orderId']) 
+      ) {
+        $result['result'] = false;
+        $result['error'] = 'Missing required fields';
+        echo drupal_to_js($result);
+        return;
+    }
+    $orderId = $input['orderId'];
+
+    $query = "SELECT * FROM uc_order_products WHERE order_id = %d";
+    $products = array();
+    $result = db_query($query,$orderId);
+    while ($product = db_fetch_object($result)) {
+      $products[] = $product;
+    }
+
+    echo drupal_to_js($products);
+  }
+
+?>
