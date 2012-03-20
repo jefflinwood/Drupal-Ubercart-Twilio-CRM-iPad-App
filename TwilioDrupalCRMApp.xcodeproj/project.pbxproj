@@ -15,6 +15,25 @@
 		28D656DE151782CE00D9A71E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D656DD151782CE00D9A71E /* AppDelegate.m */; };
 		28D656E1151782CE00D9A71E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D656E0151782CE00D9A71E /* ViewController.m */; };
 		28D656E4151782CE00D9A71E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D656E2151782CE00D9A71E /* ViewController.xib */; };
+		28D656EB1517830B00D9A71E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D656EA1517830B00D9A71E /* AudioToolbox.framework */; };
+		28D656ED1517831100D9A71E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D656EC1517831100D9A71E /* AVFoundation.framework */; };
+		28D656EF1517831700D9A71E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D656EE1517831700D9A71E /* CFNetwork.framework */; };
+		28D656F11517832900D9A71E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D656F01517832900D9A71E /* SystemConfiguration.framework */; };
+		28D656F31517833B00D9A71E /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D656F21517833B00D9A71E /* libTwilioClient.a */; };
+		28D656F61517838400D9A71E /* DrupalPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D656F51517838400D9A71E /* DrupalPhone.m */; };
+		28D657181517CA7000D9A71E /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657041517CA7000D9A71E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D657191517CA7000D9A71E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657061517CA7000D9A71E /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D6571A1517CA7000D9A71E /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657081517CA7000D9A71E /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D6571B1517CA7000D9A71E /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D6570A1517CA7000D9A71E /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D6571C1517CA7000D9A71E /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D6570C1517CA7000D9A71E /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D6571D1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D6570E1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D6571E1517CA7000D9A71E /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657111517CA7000D9A71E /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D6571F1517CA7000D9A71E /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657131517CA7000D9A71E /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D657201517CA7000D9A71E /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657151517CA7000D9A71E /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D657211517CA7000D9A71E /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657171517CA7000D9A71E /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D657251517D31F00D9A71E /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657241517D31F00D9A71E /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28D657281517F09B00D9A71E /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D657271517F09B00D9A71E /* AppHelper.m */; };
+		28D6572A151825C000D9A71E /* zones.csv in Resources */ = {isa = PBXBuildFile; fileRef = 28D65729151825C000D9A71E /* zones.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +41,54 @@
 		28D656CD151782CD00D9A71E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28D656CF151782CD00D9A71E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		28D656D1151782CD00D9A71E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28D656D5151782CD00D9A71E /* TwilioDrupalCRMApp-Info.plist */ = {isa = PBXFileReference; path = "TwilioDrupalCRMApp-Info.plist"; sourceTree = "<group>"; };
+		28D656D5151782CD00D9A71E /* TwilioDrupalCRMApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwilioDrupalCRMApp-Info.plist"; sourceTree = "<group>"; };
 		28D656D7151782CD00D9A71E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		28D656D9151782CD00D9A71E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		28D656DB151782CD00D9A71E /* TwilioDrupalCRMApp-Prefix.pch */ = {isa = PBXFileReference; path = "TwilioDrupalCRMApp-Prefix.pch"; sourceTree = "<group>"; };
-		28D656DC151782CD00D9A71E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		28D656DB151782CD00D9A71E /* TwilioDrupalCRMApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwilioDrupalCRMApp-Prefix.pch"; sourceTree = "<group>"; };
+		28D656DC151782CD00D9A71E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28D656DD151782CE00D9A71E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28D656DF151782CE00D9A71E /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		28D656DF151782CE00D9A71E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		28D656E0151782CE00D9A71E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		28D656E3151782CE00D9A71E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		28D656EA1517830B00D9A71E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		28D656EC1517831100D9A71E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		28D656EE1517831700D9A71E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		28D656F01517832900D9A71E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		28D656F21517833B00D9A71E /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTwilioClient.a; path = ../../Downloads/TwilioClient/libTwilioClient.a; sourceTree = "<group>"; };
+		28D656F41517838400D9A71E /* DrupalPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrupalPhone.h; sourceTree = "<group>"; };
+		28D656F51517838400D9A71E /* DrupalPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrupalPhone.m; sourceTree = "<group>"; };
+		28D656F81517843600D9A71E /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnection.h; sourceTree = "<group>"; };
+		28D656F91517843600D9A71E /* TCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnectionDelegate.h; sourceTree = "<group>"; };
+		28D656FA1517843600D9A71E /* TCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDevice.h; sourceTree = "<group>"; };
+		28D656FB1517843600D9A71E /* TCDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDeviceDelegate.h; sourceTree = "<group>"; };
+		28D656FC1517843600D9A71E /* TCPresenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPresenceEvent.h; sourceTree = "<group>"; };
+		28D656FD1517843600D9A71E /* TwilioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioClient.h; sourceTree = "<group>"; };
+		28D657031517CA7000D9A71E /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		28D657041517CA7000D9A71E /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		28D657051517CA7000D9A71E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		28D657061517CA7000D9A71E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		28D657071517CA7000D9A71E /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		28D657081517CA7000D9A71E /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		28D657091517CA7000D9A71E /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		28D6570A1517CA7000D9A71E /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		28D6570B1517CA7000D9A71E /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		28D6570C1517CA7000D9A71E /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		28D6570D1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		28D6570E1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		28D6570F1517CA7000D9A71E /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		28D657101517CA7000D9A71E /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		28D657111517CA7000D9A71E /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		28D657121517CA7000D9A71E /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		28D657131517CA7000D9A71E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		28D657141517CA7000D9A71E /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		28D657151517CA7000D9A71E /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		28D657161517CA7000D9A71E /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		28D657171517CA7000D9A71E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		28D657231517D31F00D9A71E /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		28D657241517D31F00D9A71E /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		28D657261517F09A00D9A71E /* AppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHelper.h; sourceTree = "<group>"; };
+		28D657271517F09B00D9A71E /* AppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHelper.m; sourceTree = "<group>"; };
+		28D65729151825C000D9A71E /* zones.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zones.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D656F31517833B00D9A71E /* libTwilioClient.a in Frameworks */,
+				28D656F11517832900D9A71E /* SystemConfiguration.framework in Frameworks */,
+				28D656EF1517831700D9A71E /* CFNetwork.framework in Frameworks */,
+				28D656ED1517831100D9A71E /* AVFoundation.framework in Frameworks */,
+				28D656EB1517830B00D9A71E /* AudioToolbox.framework in Frameworks */,
 				28D656CE151782CD00D9A71E /* UIKit.framework in Frameworks */,
 				28D656D0151782CD00D9A71E /* Foundation.framework in Frameworks */,
 				28D656D2151782CD00D9A71E /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +113,11 @@
 		28D656BE151782CC00D9A71E = {
 			isa = PBXGroup;
 			children = (
+				28D65729151825C000D9A71E /* zones.csv */,
+				28D657221517D31F00D9A71E /* JSONKit */,
+				28D657021517CA7000D9A71E /* AFNetworking */,
+				28D656D4151782CD00D9A71E /* Supporting Files */,
+				28D656F71517843500D9A71E /* Headers */,
 				28D656D3151782CD00D9A71E /* TwilioDrupalCRMApp */,
 				28D656CC151782CD00D9A71E /* Frameworks */,
 				28D656CA151782CD00D9A71E /* Products */,
@@ -67,6 +135,11 @@
 		28D656CC151782CD00D9A71E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28D656F21517833B00D9A71E /* libTwilioClient.a */,
+				28D656F01517832900D9A71E /* SystemConfiguration.framework */,
+				28D656EE1517831700D9A71E /* CFNetwork.framework */,
+				28D656EC1517831100D9A71E /* AVFoundation.framework */,
+				28D656EA1517830B00D9A71E /* AudioToolbox.framework */,
 				28D656CD151782CD00D9A71E /* UIKit.framework */,
 				28D656CF151782CD00D9A71E /* Foundation.framework */,
 				28D656D1151782CD00D9A71E /* CoreGraphics.framework */,
@@ -82,7 +155,10 @@
 				28D656DF151782CE00D9A71E /* ViewController.h */,
 				28D656E0151782CE00D9A71E /* ViewController.m */,
 				28D656E2151782CE00D9A71E /* ViewController.xib */,
-				28D656D4151782CD00D9A71E /* Supporting Files */,
+				28D656F41517838400D9A71E /* DrupalPhone.h */,
+				28D656F51517838400D9A71E /* DrupalPhone.m */,
+				28D657261517F09A00D9A71E /* AppHelper.h */,
+				28D657271517F09B00D9A71E /* AppHelper.m */,
 			);
 			path = TwilioDrupalCRMApp;
 			sourceTree = "<group>";
@@ -96,6 +172,58 @@
 				28D656DB151782CD00D9A71E /* TwilioDrupalCRMApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = TwilioDrupalCRMApp;
+			sourceTree = "<group>";
+		};
+		28D656F71517843500D9A71E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				28D656F81517843600D9A71E /* TCConnection.h */,
+				28D656F91517843600D9A71E /* TCConnectionDelegate.h */,
+				28D656FA1517843600D9A71E /* TCDevice.h */,
+				28D656FB1517843600D9A71E /* TCDeviceDelegate.h */,
+				28D656FC1517843600D9A71E /* TCPresenceEvent.h */,
+				28D656FD1517843600D9A71E /* TwilioClient.h */,
+			);
+			name = Headers;
+			path = TwilioDrupalCRMApp/Headers;
+			sourceTree = "<group>";
+		};
+		28D657021517CA7000D9A71E /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				28D657031517CA7000D9A71E /* AFHTTPClient.h */,
+				28D657041517CA7000D9A71E /* AFHTTPClient.m */,
+				28D657051517CA7000D9A71E /* AFHTTPRequestOperation.h */,
+				28D657061517CA7000D9A71E /* AFHTTPRequestOperation.m */,
+				28D657071517CA7000D9A71E /* AFImageRequestOperation.h */,
+				28D657081517CA7000D9A71E /* AFImageRequestOperation.m */,
+				28D657091517CA7000D9A71E /* AFJSONRequestOperation.h */,
+				28D6570A1517CA7000D9A71E /* AFJSONRequestOperation.m */,
+				28D6570B1517CA7000D9A71E /* AFJSONUtilities.h */,
+				28D6570C1517CA7000D9A71E /* AFJSONUtilities.m */,
+				28D6570D1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.h */,
+				28D6570E1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.m */,
+				28D6570F1517CA7000D9A71E /* AFNetworking.h */,
+				28D657101517CA7000D9A71E /* AFPropertyListRequestOperation.h */,
+				28D657111517CA7000D9A71E /* AFPropertyListRequestOperation.m */,
+				28D657121517CA7000D9A71E /* AFURLConnectionOperation.h */,
+				28D657131517CA7000D9A71E /* AFURLConnectionOperation.m */,
+				28D657141517CA7000D9A71E /* AFXMLRequestOperation.h */,
+				28D657151517CA7000D9A71E /* AFXMLRequestOperation.m */,
+				28D657161517CA7000D9A71E /* UIImageView+AFNetworking.h */,
+				28D657171517CA7000D9A71E /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		28D657221517D31F00D9A71E /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				28D657231517D31F00D9A71E /* JSONKit.h */,
+				28D657241517D31F00D9A71E /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +279,7 @@
 			files = (
 				28D656D8151782CD00D9A71E /* InfoPlist.strings in Resources */,
 				28D656E4151782CE00D9A71E /* ViewController.xib in Resources */,
+				28D6572A151825C000D9A71E /* zones.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +293,19 @@
 				28D656DA151782CD00D9A71E /* main.m in Sources */,
 				28D656DE151782CE00D9A71E /* AppDelegate.m in Sources */,
 				28D656E1151782CE00D9A71E /* ViewController.m in Sources */,
+				28D656F61517838400D9A71E /* DrupalPhone.m in Sources */,
+				28D657181517CA7000D9A71E /* AFHTTPClient.m in Sources */,
+				28D657191517CA7000D9A71E /* AFHTTPRequestOperation.m in Sources */,
+				28D6571A1517CA7000D9A71E /* AFImageRequestOperation.m in Sources */,
+				28D6571B1517CA7000D9A71E /* AFJSONRequestOperation.m in Sources */,
+				28D6571C1517CA7000D9A71E /* AFJSONUtilities.m in Sources */,
+				28D6571D1517CA7000D9A71E /* AFNetworkActivityIndicatorManager.m in Sources */,
+				28D6571E1517CA7000D9A71E /* AFPropertyListRequestOperation.m in Sources */,
+				28D6571F1517CA7000D9A71E /* AFURLConnectionOperation.m in Sources */,
+				28D657201517CA7000D9A71E /* AFXMLRequestOperation.m in Sources */,
+				28D657211517CA7000D9A71E /* UIImageView+AFNetworking.m in Sources */,
+				28D657251517D31F00D9A71E /* JSONKit.m in Sources */,
+				28D657281517F09B00D9A71E /* AppHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +351,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -228,7 +370,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -242,6 +384,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwilioDrupalCRMApp/TwilioDrupalCRMApp-Prefix.pch";
 				INFOPLIST_FILE = "TwilioDrupalCRMApp/TwilioDrupalCRMApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/TwilioClient\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -253,6 +404,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TwilioDrupalCRMApp/TwilioDrupalCRMApp-Prefix.pch";
 				INFOPLIST_FILE = "TwilioDrupalCRMApp/TwilioDrupalCRMApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/TwilioClient\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

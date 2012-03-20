@@ -9,11 +9,13 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "DrupalPhone.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize phone =_phone;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -22,6 +24,8 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    self.phone = [[DrupalPhone alloc] init];
+
     return YES;
 }
 
